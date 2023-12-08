@@ -1,0 +1,35 @@
+POST http://localhost:3333/sup
+Content-Type: application/json
+
+{
+        "marca": "Growth",
+        "produto": "creatina",
+        "quant": "250g",
+        "valor": "R$122,00",
+        "dosediaria": "3g"
+}
+
+###
+
+GET http://localhost:3333/sup
+
+###
+
+GET http://localhost:3333/sup?search=Growth
+
+###
+
+PUT http://localhost:3333/sups/a2157685-32e8-4e71-a736-3256faa6ab5b
+Content-Type: application/json
+
+{
+        "marca": "MaxTitanium",
+        "produto": "Top Whey 3W + Performance",
+        "quant": "900g",
+        "valor": "R$180,00",
+        "dosediaria": "Depende do organismo"
+}
+
+###
+
+DELETE http://localhost:3333/sups/a2157685-32e8-4e71-a736-3256faa6ab5b
